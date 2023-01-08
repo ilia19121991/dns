@@ -2,7 +2,6 @@ package tests.applyjob;
 
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
-import com.codeborne.selenide.selector.ByText;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -12,7 +11,9 @@ import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.*;
 import static io.qameta.allure.Allure.step;
 
-public class SearchGloves {
+@Tag("Apply job")
+public class ApplyJobTests extends TestBase {
+
     @DisplayName("Проверка корректной работы поиска через поисковую строку")
     @Test
     void searchBySearchStringTest() {

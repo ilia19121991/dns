@@ -24,19 +24,16 @@ public class TestBase {
         /** базовый урл */
         // Configuration.baseUrl =
         /** адрес удаленного браузера (selenoid) */
-        // Configuration.remote = System.getProperty("remote_url", "https://www.google.com/");
+        Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
         /** выбор браузера */
         Configuration.browser = System.getProperty("browser_name", "abc");
         /** выбор версии браузера */
         Configuration.browserVersion = System.getProperty("browser_version", "0.0");
         /** выбора разрешения из сборки дженкинс */
         Configuration.browserSize = System.getProperty("browser_size", "0x0");
-        /** еще передаем видео урл (в классе Attach в папке helpers)
+        /** здесь не передаем видео урл (в классе Attach в папке helpers)
          * https://selenoid.autotests.cloud/video/ */
 
-
-        // Configuration.baseUrl = "https://demoqa.com";
-        // Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
 
     }
 
