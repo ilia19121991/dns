@@ -7,7 +7,7 @@ import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.*;
 import static io.qameta.allure.Allure.step;
 
-@Tag("Apply job")
+@Tag("apply_job")
 public class ApplyJobTests extends ApplyJobTestBase {
 
     @DisplayName("Проверка корректной работы поиска через поисковую строку")

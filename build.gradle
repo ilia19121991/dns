@@ -93,7 +93,7 @@ task practice_form_test(type: Test){
 
 task apply_job_test(type: Test){
     useJUnitPlatform {
-        includeTags("Apply job")
+        includeTags("apply_job")
     }
 }
 
