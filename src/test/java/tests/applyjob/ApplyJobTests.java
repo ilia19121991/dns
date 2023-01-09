@@ -8,7 +8,7 @@ import static com.codeborne.selenide.Selenide.*;
 import static io.qameta.allure.Allure.step;
 
 @Tag("Apply job")
-public class ApplyJobTests extends ApplyJobTestBase{
+public class ApplyJobTests extends ApplyJobTestBase {
 
     @DisplayName("Проверка корректной работы поиска через поисковую строку")
     @Test
