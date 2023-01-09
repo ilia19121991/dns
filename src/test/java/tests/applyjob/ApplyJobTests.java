@@ -1,7 +1,5 @@
 package tests.applyjob;
 
-import com.codeborne.selenide.Configuration;
-import com.codeborne.selenide.Selenide;
 import org.junit.jupiter.api.*;
 
 import static com.codeborne.selenide.Condition.text;
@@ -10,7 +8,7 @@ import static com.codeborne.selenide.Selenide.*;
 import static io.qameta.allure.Allure.step;
 
 @Tag("Apply job")
-public class ApplyJobTests {
+public class ApplyJobTests extends ApplyJobTestBase{
 
     @DisplayName("Проверка корректной работы поиска через поисковую строку")
     @Test
