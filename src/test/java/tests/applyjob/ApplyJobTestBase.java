@@ -10,28 +10,28 @@ import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 
-public class TestBase {
+public class ApplyJobTestBase {
 
     @BeforeAll
     static void beforeAll() {
         Configuration.holdBrowserOpen = true;
 
-        DesiredCapabilities capabilities = new DesiredCapabilities();
+        /*DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("enableVNC", true);
         capabilities.setCapability("enableVideo", true);
         Configuration.browserCapabilities = capabilities;
 
-        /** базовый урл */
+        *//** базовый урл *//*
         // Configuration.baseUrl =
-        /** адрес удаленного браузера (selenoid) */
+        *//** адрес удаленного браузера (selenoid) *//*
         Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
-        /** выбор браузера */
+        *//** выбор браузера *//*
         Configuration.browser = System.getProperty("browser_name", "abc");
-        /** выбор версии браузера */
+        *//** выбор версии браузера *//*
         Configuration.browserVersion = System.getProperty("browser_version", "0.0");
-        /** выбора разрешения из сборки дженкинс */
+        *//** выбора разрешения из сборки дженкинс *//*
         Configuration.browserSize = System.getProperty("browser_size", "0x0");
-        /** здесь не передаем видео урл (в классе Attach в папке helpers)
+        *//** здесь не передаем видео урл (в классе Attach в папке helpers)
          * https://selenoid.autotests.cloud/video/ */
 
 
