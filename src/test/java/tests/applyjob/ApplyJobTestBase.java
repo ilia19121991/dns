@@ -1,6 +1,7 @@
 package tests.applyjob;
 
 import com.codeborne.selenide.Configuration;
+import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import helpers.Attach;
 import io.qameta.allure.selenide.AllureSelenide;
@@ -51,5 +52,12 @@ public class ApplyJobTestBase {
         Attach.pageSource();
         Attach.browserConsoleLogs();
         Attach.addVideo();
+    }
+
+    @AfterEach
+    void closeBrowser(){
+
+        Selenide.closeWebDriver();
+
     }
 }
