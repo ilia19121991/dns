@@ -17,7 +17,6 @@ public class ApplyJobTestBase {
 
     @BeforeAll
     static void beforeAll() {
-        Configuration.holdBrowserOpen = true;
 
         // Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
 
