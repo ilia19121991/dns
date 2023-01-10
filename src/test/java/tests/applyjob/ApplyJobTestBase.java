@@ -52,10 +52,6 @@ public class ApplyJobTestBase {
         Attach.pageSource();
         Attach.browserConsoleLogs();
         Attach.addVideo();
-    }
-
-    @AfterEach
-    void closeBrowser(){
 
         Selenide.closeWebDriver();
 
